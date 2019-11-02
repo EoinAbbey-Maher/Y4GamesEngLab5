@@ -8,11 +8,13 @@ using namespace std;
 int main()
 {
 	Production p;
+	std::vector<int> numbers;
 
-	int a = 10;
+	p.takeNumbers(&numbers);
 
-	cout << p.someMethod(a) << endl;
-	assert(p.someMethod(a) == 0);
-	assert(p.someMethod(a) == 1);
+		
+	assert(p.checkSize(numbers.size()) == true);
+	assert(p.checkNumbers(&numbers) == true);
+
 	cin.get();
 }
