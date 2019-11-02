@@ -12,7 +12,7 @@ int main()
 	int a = 10;
 
 	cout << p.someMethod(a) << endl;
-	//assert(p.someMethod(a) == 0);
+	assert(p.someMethod(a) == 0);
 	assert(p.someMethod(a) == 1);
 	cin.get();
 }
