@@ -7,7 +7,7 @@ int Production::someMethod(int a)
 
 void Production::takeNumbers(std::vector<int>* t_numsArray)
 {
-	std::cout << "Please input 6 numbers";
+	std::cout << "Please input 6 numbers" << std::endl;
 
 	std::vector<int> nums;
 	t_numsArray->clear();
@@ -45,7 +45,7 @@ bool Production::checkForDupes(std::vector<int>* t_numsArray)
 {
 	for (int i = 0; i < t_numsArray->size(); i++)
 	{
-		for (int j = 0; j < t_numsArray->size; j++)
+		for (int j = 0; j < t_numsArray->size(); j++)
 		{
 			if (t_numsArray->at(i) == t_numsArray->at(j) && i != j)
 			{
